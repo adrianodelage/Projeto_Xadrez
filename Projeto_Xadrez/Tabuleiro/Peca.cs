@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tabuleiro
+namespace tabuleiro
 {
     class Peca
-    {
+    {        
 
         public Posicao posicao { get; set; }
 

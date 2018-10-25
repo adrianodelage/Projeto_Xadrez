@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tabuleiro;
+using tabuleiro;
 
 namespace Projeto_Xadrez
 {
@@ -13,13 +13,13 @@ namespace Projeto_Xadrez
         static void Main(string[] args)
         {
 
-            //aaa
-
-            Posicao P = new Posicao(3, 4);
-
+            //Posicao P = new Posicao(8, 8);
             //Console.WriteLine("Posição: " + P.linha + " Coluna: " + P.coluna);
+            // Console.WriteLine("Posição: " + P);
 
-            Console.WriteLine("Posição: " + P);
+            Tabuleiro tab = new Tabuleiro(8,8);
+
+            Tela.imprimirTabuleiro(tab);
 
             Console.ReadLine();
 
