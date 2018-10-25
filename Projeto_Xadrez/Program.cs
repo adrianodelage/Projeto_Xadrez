@@ -8,7 +8,7 @@ using Tabuleiro;
 
 namespace Projeto_Xadrez
 {
-    class Program
+    class Programude
     {
         static void Main(string[] args)
         {
