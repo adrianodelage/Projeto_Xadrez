@@ -14,31 +14,32 @@ namespace Projeto_Xadrez
         static void Main(string[] args)
         {
 
-            //Posicao P = new Posicao(8, 8);
-            //Console.WriteLine("Posição: " + P.linha + " Coluna: " + P.coluna);
-            // Console.WriteLine("Posição: " + P);
+            Posicao P = new Posicao(8, 8);
+            Console.WriteLine("Posição: " + P.linha + " Coluna: " + P.coluna);
+            Console.WriteLine("Posição: " + P);
 
-            //try
-            //{
+            try
+            {
 
-            //    Tabuleiro tab = new Tabuleiro(8, 8);
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-            //    tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-            //    tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-            //    tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+                tab.colocarPeca(new Rei(tab, Cor.Branco), new Posicao(0, 2));
 
-            //    Tela.imprimirTabuleiro(tab);
-            //}
-            //catch (TabuleiroException e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
+                Console.WriteLine("");
+                Tela.imprimirTabuleiro(tab);
+            }
+            catch (TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
 
-            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+            //PosicaoXadrez pos = new PosicaoXadrez('a', 1);
 
-            Console.WriteLine(pos);
-            Console.WriteLine(pos.toPosicao());
+            //Console.WriteLine(pos);
+            //Console.WriteLine(pos.toPosicao());
 
 
             Console.ReadLine();
