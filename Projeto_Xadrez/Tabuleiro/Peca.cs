@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace tabuleiro
 {
-    class Peca
+    // abstract por conta do movimentosPossiveis
+    abstract class Peca
     {        
 
         public Posicao posicao { get; set; }
@@ -31,6 +32,11 @@ namespace tabuleiro
 
         public void incrementarQteMovimentos() { qteMovimentos++; }
 
+
+
+        //Abstratct, ou sej, genérico -> Vai ser implementado em outra classe
+        //Lembrando que nesse caso a MÃE tem que ser abstrata também.
+        public abstract bool[,] movimentosPossiveis();
     }
 
 
